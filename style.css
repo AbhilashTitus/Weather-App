@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Main Container */
+.app-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 35px 40px;
+  width: 100%;
+  max-width: 420px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Title */
+.app-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  color: #333;
+  background: #f1f1f1;
+}
+
+
+.search-box button {
+  padding: 12px 18px;
+  border: none;
+  background: #19ca9b;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/* Weather Info */
+.weather-info {
+  display: none;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.weather-info h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.condition {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffeb3b;
+  margin-bottom: 10px;
+}
+
+#temperature {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+/* Weather Stats Block */
+.weather-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.weather-stats div {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weather-stats div:last-child {
+  border-right: none;
+}
+
+.weather-stats h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.weather-stats p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ddd;
+}
